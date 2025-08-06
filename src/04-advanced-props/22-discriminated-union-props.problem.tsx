@@ -8,10 +8,16 @@
  * impossible combinations of props.
  */
 
-type ModalProps = {
-  variant: "no-title" | "title";
-  title?: string;
+type NoTitle = {
+  variant: "no-title";
 };
+
+type Title = {
+  variant: "title";
+  title: string;
+};
+
+type ModalProps = NoTitle | Title;
 
 export const Modal = (props: ModalProps) => {
   if (props.variant === "no-title") {
