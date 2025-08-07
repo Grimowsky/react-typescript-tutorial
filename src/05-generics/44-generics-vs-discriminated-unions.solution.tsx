@@ -1,8 +1,4 @@
-/**
- * Yep, a discriminated union is the way to go here. Instead of
- * using a generic type (with a conditional type!), we can use
- * a discriminated union to make sure that the correct props
- * are passed in for each variant.
+/** * Yep, a discriminated union is the way to go here. Instead of * using a generic type (with a conditional type!), we can use * a discriminated union to make sure that the correct props * are passed in for each variant.
  */
 
 export type ModalProps = {
