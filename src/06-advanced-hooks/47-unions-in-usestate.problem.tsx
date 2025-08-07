@@ -12,8 +12,11 @@ import { appendVideoToDomAndPlay, fetchVideo } from "fake-external-lib";
  *
  * 1. See if you can fix the errors below by making the type of state more specific.
  */
+
+type LoadingStates = "loading" | "loaded" | "error";
+
 export const useLoadAsyncVideo = (src: string) => {
-  const [state, setState] = useState("loading");
+  const [state, setState] = useState<LoadingStates>("loading");
 
   useEffect(() => {
     setState("loading");

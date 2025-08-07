@@ -28,7 +28,7 @@ type ExampleTests = [
       typeof notUndefined.set,
       React.Dispatch<React.SetStateAction<{ name: string }>>
     >
-  >,
+  >
 ];
 
 /**
@@ -43,5 +43,5 @@ type NumTests = [
       typeof hasUndefined.set,
       React.Dispatch<React.SetStateAction<number | undefined>>
     >
-  >,
+  >
 ];
